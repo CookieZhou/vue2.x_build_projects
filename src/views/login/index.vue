@@ -162,7 +162,6 @@ export default {
         },
         // 新用户绑定并登录
         bindNewUserLogin() {
-            // this.$store.dispatch('user/bindNewUser', this.formData).then(res => {
             this.$api('bindLogin', this.formData).then(res => {
                 if (res.data.result) {
                     setTimeout(() => {
@@ -204,8 +203,7 @@ export default {
         }
     },
     created() {
-        this.$setStorage('20', 12, false)
-        console.log(this.$getStorage('20', false))
+
     }
 }
 </script>
