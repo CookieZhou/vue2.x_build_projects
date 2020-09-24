@@ -1,0 +1,126 @@
+.login_page{
+    overflow: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display: flex;
+    .bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        .my-swipe{
+            height: 100vh;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .login_content{
+        width: 320px;
+        margin: auto;
+        z-index: 2;
+        border-radius: 8px;
+        padding: 20px 20px 25px 20px;
+        position: relative;
+        z-index: 2;
+        background: rgba(0,0,0,0.7);
+    }
+    .title{
+        font-size: 18px;
+        color: #fff;
+    }
+    .write_area{
+        .phone_write /deep/ .van-field /deep/ .van-field__control{
+            color: #fff;
+            &::placeholder{
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+        .phone_write{
+            height: 50px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            .van-field{
+                font-size: 18px;
+                padding: 0 0;
+                background: transparent;
+                color: #fff !important;
+                .van-field__body{
+                    height: 30px;
+                }
+            }
+            .code_btn{
+                padding: 0;
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 2px;
+                .van-button__text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 28px;
+                    width: 73px;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+        }
+        .write_active{
+            border-bottom: 1px solid #fff;
+        }
+        .login_btn{
+            margin-top: 45px;
+            .van-button{
+                padding: 0;
+                height: 45px;
+                line-height: 45px;
+                border-radius: 4px;
+                .van-button__text{
+                    color: #fff;
+                    height: 43px;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        .other_login{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 14px;
+            .left{
+                flex: 1/2;
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .loading_wrap{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 51px;
+        text-align: center;
+        .loading_text{
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}
