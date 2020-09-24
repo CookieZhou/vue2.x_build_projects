@@ -1,5 +1,6 @@
 # vue2.x_build_projects
 vue2.x搭建的模块化项目
+路由文件，接口文件，（vuex）store文件进行了模块化管理
 
 ## Project setup
 ```
